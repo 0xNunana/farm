@@ -7,7 +7,7 @@ const About = () => {
       <div className='max-w-7xl mx-auto px-3'>
 <div className='grid md:grid-cols-2 lg:grid-cols-3 py-10 lg:py-20 gap-5 '>
 <div className='hidden  md:inline-flex col-span-1 '>
-  <Image src='/assets/hand.jpg' alt='hand' width={500} height={100} className='h-[400px] w-[350px]'/>
+  <Image src='/assets/hand.jpg' alt='hand' width={500} height={100} className='h-[400px] w-[350px] rounded-lg'/>
 </div>
 <div className='col-span-1  lg:col-span-2 text-white '>
 <p className='text-sm lg:text-2xl max-md:text-center'>About Us</p>
