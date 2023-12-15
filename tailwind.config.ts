@@ -22,7 +22,8 @@ const config: Config = {
         'deep-green':'#334b35',
         'mid-green':'#6d8c54',
         'light-green':'#ccd7c2',
-        'yellow':'#f6c15f'
+        'about-green':'#263c28',
+        'yellow':'#f7c35f'
       }
     },
   },

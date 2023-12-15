@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import { FaCheckCircle } from "react-icons/fa";
+import { BsFillTrophyFill } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className='bg-deep-green/80  '>
+    <div className='bg-deep-green relative  '>
+      <div className='hidden md:flex bg-about-green h-[300px] w-[25%] 4xl:w-[35%] 7xl:w-[50%] absolute'/>
       <div className='max-w-7xl mx-auto px-3'>
 <div className='grid md:grid-cols-2 lg:grid-cols-3 py-10 lg:py-20 gap-5 '>
 <div className='hidden  md:inline-flex col-span-1  justify-center  '>
@@ -12,7 +14,7 @@ const About = () => {
    <Image src='/assets/hand.jpg' alt='hand' width={500} height={100} className='h-[400px] w-[350px] rounded-lg z-30'/> 
 <div className='flex justify-center items-center'>
   <div className='p-4 rounded-lg  -mt-7 bg-mid-green divide-x-2 gap-2 text-white flex items-center'>
-    <p>Icon</p>
+    <p className='text-yellow text-3xl'><BsFillTrophyFill /></p>
     <div className='pl-2'>
       <p>5000 Acres</p>
       <p>successfully cultivated</p>

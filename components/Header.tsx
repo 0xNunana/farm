@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <nav className='bg-deep-green sticky top-0 z-50'>
+    <nav className='bg-deep-green sticky top-0 z-50 shadow-md'>
       <div className='max-w-7xl mx-auto flex justify-between py-7 px-3'>
 <div className=''>
   <Image src='/logo/whitelogo.png' alt='logo' priority width={250} height={200} className='max-sm:w-[150px]'/>
