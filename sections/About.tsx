@@ -5,7 +5,7 @@ import { BsFillTrophyFill } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className='bg-deep-green relative  '>
+    <div className='bg-deep-green relative  ' id='about'>
       <div className='hidden md:flex bg-about-green h-[300px] w-[25%] 4xl:w-[35%] 7xl:w-[50%] absolute'/>
       <div className='max-w-7xl mx-auto px-3'>
 <div className='grid md:grid-cols-2 lg:grid-cols-3 py-10 lg:py-20 gap-5 '>

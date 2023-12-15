@@ -1,6 +1,7 @@
 
 import About from '@/sections/About'
 import Hero from '@/sections/Hero'
+import Partners from '@/sections/Partners'
 import Products from '@/sections/Products'
 import Projects from '@/sections/Projects'
 import Testimonial from '@/sections/Testimonial'
@@ -14,6 +15,7 @@ export default function Home() {
     <Hero/>
     <About/>
     <Products/>
+    <Partners/>
     <Video/>
     <Projects/>
     <Testimonial/>
