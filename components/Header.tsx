@@ -5,11 +5,14 @@ import { TiShoppingCart } from "react-icons/ti";
 import React,{useState} from 'react'
 import { IoMenu } from "react-icons/io5";
 import { GrClose } from "react-icons/gr";
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [ismenuOpen,setIsMenuOpen]=useState(false)
+  const pathname = usePathname()
+  
   return (
-    <header className='bg-deep-green sticky top-0 z-50 shadow-md'>
+    <header className={`bg-deep-green sticky top-0 z-50 ${pathname ==='/' && 'shadow-md'}`}>
       <nav className='max-w-7xl mx-auto flex justify-between py-6 px-3'>
 <div className='flex items-center'>
   <Link href='/'>
@@ -26,23 +29,44 @@ const Header = () => {
 
 {/* web */}
 <div className='hidden md:flex items-center justify-between gap-5'>
-<ul className=' gap-4 text-white hidden md:flex'>
-  <Link href='#home'>
-  <li className='hover:underline-offset-4'>Home</li>
+  {pathname === '/' ? (
+    <ul className=' gap-4 text-white hidden md:flex'>
+    <Link href='#home'>
+    <li className='hover:underline-offset-4'>Home</li>
+    </Link>
+    <Link href='#about'>
+    <li>About</li>
+    </Link>
+  <Link href='#products'>
+   
+  <li>Products</li>
   </Link>
-  <Link href='#about'>
-  <li>About</li>
+  <Link href='/contact'>
+   
+  <li>Contact Us</li>
   </Link>
-<Link href='#products'>
- 
-<li>Products</li>
-</Link>
+  
+  </ul>
+  ):(
+    <ul className=' gap-4 text-white hidden md:flex'>
+
+
 <Link href='/contact'>
  
 <li>Contact Us</li>
 </Link>
+<Link href='/shop'>
+ 
+ <li>Shop</li>
+ </Link>
 
 </ul>
+  )}
+
+
+
+
+
 <div className='text-yellow text-2xl relative hover:text-white hover:bg-gray-400 rounded-full p-3'>
 <TiShoppingCart />
 <div className='bg-black absolute w-5 h-5 rounded-full p-1 -top-1 right-1 flex justify-center items-center'>

@@ -2,7 +2,10 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='min-h-screen'>Shop here</div>
+    <main className=''>
+  
+        <div className=' bg-white rounded-lg '>children</div>
+      </main>
   )
 }
 
