@@ -84,7 +84,7 @@ const Header = () => {
         <GrClose onClick={()=>setIsMenuOpen(false)}  className='h-10 w-10  rounded-full  flex my-5 justify-center  z-20 items-center'/>
 
         </div>
-        <div className='grid gap-6'>
+        {pathname==='/' ? (  <div className='grid gap-6'>
         <Link href='/' onClick={()=>setIsMenuOpen(false)} className='hover:bg-mid-green p-3 rounded-md'>
         <p>Home</p>
         </Link>
@@ -105,7 +105,21 @@ const Header = () => {
        <Link href='/contact' onClick={()=>setIsMenuOpen(false)}className='hover:bg-mid-green  p-3 rounded-md'>
        <p>Contact Us</p>
        </Link>
-        </div>
+        </div>):(
+            <div className='grid gap-6'>
+            <Link href='/' onClick={()=>setIsMenuOpen(false)} className='hover:bg-mid-green p-3 rounded-md'>
+            <p>Home</p>
+           </Link>
+    
+           <Link href='/shop' onClick={()=>setIsMenuOpen(false)}className='hover:bg-mid-green  p-3 rounded-md'>
+           <p>Shop Now</p>
+           </Link>
+           <Link href='/contact' onClick={()=>setIsMenuOpen(false)}className='hover:bg-mid-green  p-3 rounded-md'>
+           <p>Contact Us</p>
+           </Link>
+            </div>
+        )}
+      
       
     </div>
     </div>
