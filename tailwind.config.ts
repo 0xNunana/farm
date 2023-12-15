@@ -13,8 +13,10 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      'hero':"url('/assets/hero.jpg')",
-      'about':"url('/assets/hand.jpg')"
+      'hero':"url('/assets/vegie.jpeg')",
+      'about':"url('/assets/hand.jpg')",
+      'experience':"url('/assets/tractor.jpg')"
+    
         },
       colors:{
         'deep-green':'#334b35',
