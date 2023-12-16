@@ -1,12 +1,26 @@
-import React from 'react'
+// pages/index.tsx
+'use client'
+import React, { useState } from 'react';
+import Search from '@/components/Search';
+import Display from '@/components/Display';
 
-const page = () => {
+const Page: React.FC = () => {
+  const [searchResults, setSearchResults] = useState<any[]>([]);
+
+  const handleSearch = (results: any[]) => {
+    setSearchResults(results);
+  };
+
   return (
     <main className=''>
-  
-        <div className=' bg-white rounded-lg '>children</div>
-      </main>
-  )
-}
+      <div className="py-5">
+        <Search onSearch={handleSearch} />
+      </div>
+      <div >
+        <Display results={searchResults} />
+      </div>
+    </main>
+  );
+};
 
-export default page
+export default Page;

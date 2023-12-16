@@ -1,4 +1,6 @@
 
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 import About from '@/sections/About'
 import Hero from '@/sections/Hero'
 import Partners from '@/sections/Partners'
@@ -11,7 +13,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className='min-h-screen'>
-    
+    <Header/>
     <Hero/>
     <About/>
     <Products/>
@@ -20,7 +22,7 @@ export default function Home() {
     <Projects/>
     <Testimonial/>
     
-
+<Footer/>
     </main>
   )
 }

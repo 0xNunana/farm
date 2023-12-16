@@ -19,15 +19,13 @@ export const metadata: Metadata = {
      
         <>
       
-          <div className="flex h-screen">
+          <div className="flex min-h-screen">
       {/* Left Menu */}
      <Menu/>
 
       {/* Main Content */}
       <main className="flex-1 p-10 gap-5 bg-gray-200">
-      <div className="py-5">
-      <Search/>
-      </div>
+     
      
    
    
