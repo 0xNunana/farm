@@ -6,6 +6,7 @@ import { BsFillTrophyFill } from "react-icons/bs";
 const About = () => {
   return (
     <div className='bg-deep-green relative  ' id='about'>
+    
       <div className='hidden md:flex bg-about-green h-[300px] w-[25%] 4xl:w-[35%] 7xl:w-[50%] absolute'/>
       <div className='max-w-7xl mx-auto px-3'>
 <div className='grid md:grid-cols-2 lg:grid-cols-3 py-10 lg:py-20 gap-5 '>
@@ -35,16 +36,16 @@ const About = () => {
 <p className='text-yellow lg:text-xl py-2 font-bold max-md:text-center'>We are the leaders of the Agric revolution in Ghana</p>
 <p className='text-sm lg:text-base max-md:text-center'>A team of dedicated indiviuals with a passion for food and the environment</p>
 <div className='max-md:flex justify-center '>
-<ul className='pt-3 lg:pt-10  gap-4 justify-center'> 
-  <li className='flex items-center gap-4 '>
+<ul className='pt-3 lg:pt-10  space-y-3 w-full'> 
+  <li className='flex items-center gap-4 max-md:bg-mid-green/20 max-md:justify-center max-md:py-1 rounded-lg'>
     <div className='text-yellow'><FaCheckCircle /></div>
     <p>Organic foods</p>
   </li>
-  <li className='flex items-center gap-4'>
+  <li className='flex items-center gap-4 max-md:bg-mid-green max-md:justify-center max-md:py-1 rounded-lg'>
     <div className='text-yellow'><FaCheckCircle /></div>
     <p>Grown with love</p>
   </li>
-  <li className='flex items-center gap-4'>
+  <li className='flex items-center gap-4 max-md:bg-mid-green/20 max-md:justify-center max-md:py-1 rounded-lg'>
     <div className='text-yellow'><FaCheckCircle /></div>
     <p>Extensive research</p>
   </li>

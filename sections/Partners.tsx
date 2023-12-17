@@ -21,6 +21,9 @@ const Partners = () => {
             <div>
                 <Image src='/logo/fia.png' alt='health' width={100} height={200}  className='rounded-full'/>
             </div>
+            <div>
+                <Image src='/logo/fc.jpg' alt='health' width={100} height={200}  className='rounded-full'/>
+            </div>
         </div>
     </div>
   )
