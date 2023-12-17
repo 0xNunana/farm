@@ -12,7 +12,7 @@ const About = () => {
 <div className='grid md:grid-cols-2 lg:grid-cols-3 py-10 lg:py-20 gap-5 '>
 <div className='hidden  md:inline-flex col-span-1  justify-center  '>
   <div className=' relative'> 
-   <Image src='/assets/hand.jpg' alt='hand' width={500} height={100} className='h-[400px] w-[350px] rounded-lg z-30'/> 
+   <Image src='/assets/machine2.jpg' alt='hand' width={500} height={100} className='h-[400px] w-[350px] rounded-lg z-30 object-cover'/> 
 <div className='flex justify-center items-center'>
   <div className='p-4 rounded-lg  -mt-7 bg-mid-green divide-x-2 gap-2 text-white flex items-center'>
     <p className='text-yellow text-3xl'><BsFillTrophyFill /></p>

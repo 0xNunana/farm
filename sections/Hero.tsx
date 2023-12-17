@@ -9,7 +9,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <div className='bg-hero bg-cover bg-no-repeat '>
-      <div className='bg-gradient-to-r from-black/80 via-black/30 to-black/5 py-20 md:py-28 lg:py-38 relative'>
+      <div className='bg-gradient-to-r from-black/50  to-black/5 py-20 md:py-28 lg:py-38 relative'>
       <div className='absolute right-8 bottom-5 bg-black/50 rounded-full'>
         <Image src='/assets/sdg.png' alt='SDG&apos;s' width={200} height={300} className='w-[100px] md:w-[150px] lg:w-[200px]'/>
       </div>
